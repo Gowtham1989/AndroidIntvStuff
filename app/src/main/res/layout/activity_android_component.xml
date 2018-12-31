@@ -8,13 +8,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Activities.MainActivity">
+    tools:context=".activities.MainActivity">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mActivity"
         android:text="Activity Life Cycle"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mFragment"
+        android:text="Fragment"
         android:gravity="center"/>
 
     <Button
@@ -36,5 +43,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/mContentProvider"
         android:text="Content Provider"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mHandler"
+        android:text="Handler"
         android:gravity="center"/>
 </LinearLayout>
