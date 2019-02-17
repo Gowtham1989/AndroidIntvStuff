@@ -5,6 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.androidintvstuff"
         minSdkVersion 28
         targetSdkVersion 28
@@ -19,7 +20,14 @@ android {
     }
 }
 
-
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
